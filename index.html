@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <title>Portfolio - Drew Andersen</title>
 </head>
 <body>
     <header>
-        <h1>Drew Andersen</h1>
+        <h1 class="nav-title">Drew Andersen</h1>
         <!-- Need a Photo/Avatar of me -->
         <nav id="navbar">
             <ul>
-                <li href="#about-me">About Me</li>
-                <li href="#work">Work</li>
-                <li href="#contact-me">Contact Me</li>
-                <li href="#resume">Resume</li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+                <li><a href="#resume" target="_blank">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -29,17 +31,31 @@
 
         <section id="work">
             <h2>Work</h2>
-            <div>
+            <div class="projects">
+
+            </div>
+            <div class="projects">
 
             </div>
         </section>
 
         <section id="contact-me">
-            <div class="github">
-                fa fa-git
+            <div class="contact-header">
+                <h2>Contact Me</h2>
             </div>
-            <div class="email">
-                f fa-mail
+            <div class="contact-links">
+                <a href="https://github.com/Drew-Andersen" id="profile-link" class="button contact-details" target="_blank">
+                    <i class="fa fa-github"></i>
+                    GitHub
+                </a>
+                <a href="mailto:andrewtandersen@gmail.com" class="button contact-details">
+                    <i class="fa fa-envelope"></i>
+                    Email
+                </a>
+                <a href="https://www.linkedin.com/in/andrew-andersen/" class="button contact-details"  target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                    LinkedIn
+                </a>
             </div>
         </section>
 
