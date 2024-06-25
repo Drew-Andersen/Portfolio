@@ -10,27 +10,38 @@
 </head>
 <body>
     <header>
-        <h1 class="nav-title">Drew Andersen</h1>
+        <h1 class="nav-title"><a href="index.html">Drew Andersen</a></h1>
         <!-- Need a Photo/Avatar of me -->
         <nav id="navbar">
-            <ul>
+            <ul class="navbar-ul">
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#contact-me">Contact Me</a></li>
-                <li><a href="#resume" target="_blank">Resume</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="about-me">
+    <main class="container">
+        <section class="h2-sections">
             <h2>About Me</h2>
+        </section>
+        <section id="about-me">
+            <img src="./assets/images/Profile-img.jpeg" class="profile-img" alt="profile image" />
             <p class="about-me">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugiat fuga repudiandae libero, facilis est error reprehenderit eos blanditiis alias ad, molestias quas eveniet dolore nesciunt nulla eius? Incidunt, sit.
+                I graduated from Georgia Southern University with a BS in Biology and a minor in Chemistry in hopes to go to veternarian school. After graduating, I came to like working out and became
+                a personal trainer/group fitness coach for BodyWorX Studio 912, which opened a door for me to work in Health Promotion and Wellness at the local hospital. 
+            </p>
+            <br>
+            <p>
+                After working there for two years I found a job in Savannah, GA as an operations member at a logistics company. I worked there for 4 years when I found that I liked to work with computers 
+                more than I liked working in logistics. I found some free online courses to get me started in coding/ web development and ended up getting two certifications from FreeCodeCamp in HTML, CSS,
+                and Javascript. I am currently enrolled in a coding bootcamp from UCF with hopes to find a new career.
             </p>
         </section>
 
-        <section id="work">
+        <section class="h2-sections">
             <h2>Work</h2>
+        </section>
+        <section id="work">
             <div class="projects">
 
             </div>
@@ -39,10 +50,10 @@
             </div>
         </section>
 
+        <section class="h2-sections">
+            <h2 class="contact-header">Contact Me</h2>
+        </section>
         <section id="contact-me">
-            <div class="contact-header">
-                <h2>Contact Me</h2>
-            </div>
             <div class="contact-links">
                 <a href="https://github.com/Drew-Andersen" id="profile-link" class="button contact-details" target="_blank">
                     <i class="fa fa-github"></i>
@@ -56,12 +67,6 @@
                     <i class="fa fa-linkedin"></i>
                     LinkedIn
                 </a>
-            </div>
-        </section>
-
-        <section id="resume">
-            <div class="resume">
-
             </div>
         </section>
     </main>
