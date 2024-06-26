@@ -72,7 +72,7 @@ header nav {
 
 .container {
     display: grid;
-    grid-template-columns: 15% 75%;
+    grid-template-columns: 10% 80%;
     width: 95%;
     gap: 5%;
 }
@@ -93,12 +93,31 @@ header nav {
 }
 
 #work {
-    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 350px;
+    grid-template-areas: 
+        "first first second" 
+        "third fourth fifth";
+    gap: 20px;
 }
 
 #work a {
     text-decoration: none;
     color: black;
+}
+
+.first {
+    grid-area: first;
+}
+
+.second {
+    grid-area: second;
+}
+
+.third {
+    grid-area: third;
 }
 
 .projects {
@@ -115,14 +134,19 @@ header nav {
     display: flex;
     justify-content: center;
     font-size: 1.6rem;
-    width: 100%;
     background-image: var(--background-img);
     border-radius: 20px 20px 0 0;
 }
 
 .project-img {
-    height: 250px;
+    min-height: 100px;
+    max-height: 250px;
     border-radius: 0 0 20px 20px;
+}
+
+.center-image {
+    display: flex;
+    justify-content: center;
 }
 
 /*=======================Contact links and images======================*/
@@ -166,9 +190,19 @@ header nav {
     color: white;
 }
 
-
 /*====================Media Query===================*/
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1575px) {
+    #work{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 350px 350px 350px;
+        grid-template-areas:
+            "first first" "second third" "forth fifth";
+    }
+}
+
+@media screen and (max-width: 1050px) {
     header {
         display: flex;
         align-items: center;
@@ -179,7 +213,7 @@ header nav {
 
     .nav-title {
         width: 100%;
-        margin: 0 auto;
+        margin: 0;
         padding: 0;
         text-align: center;
     }
@@ -194,12 +228,21 @@ header nav {
         display: grid;
         grid-template-columns: 100%;
         width: 90%;
-        margin: 40px;
+        margin: 0;
     }
 
     .h2-sections {
         border-right: 0;
         border-bottom: 4px solid var(--border-red);
         text-align: center;
+    }
+
+    #work{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px 350px 350px 350px 350px;
+        grid-template-areas:
+            "first" "second" "third" "forth" "fifth";
     }
 }
