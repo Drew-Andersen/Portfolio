@@ -2,6 +2,7 @@
     --red: #e60000;
     --shadow-red: #660000;
     --border-red: #4d0000;
+    --background-img: linear-gradient( #a6a6a6, #f2f2f2f2);
 }
 
 * {
@@ -29,7 +30,7 @@ header {
     font-size: 20px;
     color: black;
     margin-bottom: 25px;
-    background-image: linear-gradient( #a6a6a6, #f2f2f2f2);
+    background-image: var(--background-img)
 }
 
 .nav-title {
@@ -89,6 +90,39 @@ header nav {
     border: 3px solid var(--border-red);
     float: left;
     margin-right: 10px;
+}
+
+#work {
+    display: flex;
+}
+
+#work a {
+    text-decoration: none;
+    color: black;
+}
+
+.projects {
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.project-buffer {
+    margin: 10px;
+}
+
+.project-title {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    width: 100%;
+    background-image: var(--background-img);
+    border-radius: 20px 20px 0 0;
+}
+
+.project-img {
+    height: 250px;
+    border-radius: 0 0 20px 20px;
 }
 
 /*=======================Contact links and images======================*/
