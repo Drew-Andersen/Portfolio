@@ -148,6 +148,7 @@ header nav {
 .center-image {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /*=======================Contact links and images======================*/
@@ -204,7 +205,7 @@ header nav {
 }
 
 /*====================Media Query===================*/
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1410px) {
     #work{
         width: 100%;
         display: grid;
@@ -215,7 +216,7 @@ header nav {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1030px) {
     header {
         display: flex;
         align-items: center;
@@ -258,5 +259,13 @@ header nav {
         grid-template-rows: 350px 350px 350px 350px 350px;
         grid-template-areas:
             "first" "second" "third" "forth" "fifth";
+    }
+
+    .project-img {
+        position: relative;
+        min-height: 100px;
+        max-height: 250px;
+        max-width: 300px;
+        border-radius: 0 0 20px 20px;
     }
 }
