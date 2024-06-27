@@ -3,6 +3,10 @@
 ## Description
 
 This is a portfolio using HTML and CSS to showcase my work and capabilities.
+![alt text](<assets/images/Portfolio Image.png>)
+
+## Depoyed Website
+https://drew-andersen.github.io/Portfolio/
 
 ## Installation
 

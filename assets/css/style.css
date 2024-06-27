@@ -213,6 +213,10 @@ header nav {
 
 /*====================Media Query===================*/
 @media screen and (max-width: 1410px) {
+    html{
+        scroll-behavior: smooth;
+    }
+
     #work{
         width: 100%;
         display: grid;
@@ -224,6 +228,10 @@ header nav {
 }
 
 @media screen and (max-width: 1030px) {
+    html{
+        scroll-behavior: smooth;
+    }
+    
     header {
         display: flex;
         align-items: center;
